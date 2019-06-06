@@ -13,10 +13,10 @@ func main() {
 	// Create EC2 service client
 	svc := ec2.New(session.New())
 	input := &ec2.RequestSpotInstancesInput{
-		InstanceCount: aws.Int64(5),
+		InstanceCount: aws.Int64(1),
 		LaunchSpecification: &ec2.RequestSpotLaunchSpecification{
 			IamInstanceProfile: &ec2.IamInstanceProfileSpecification{
-				Arn: aws.String("arn:aws:iam::123456789012:instance-profile/my-iam-role"),
+				Arn: aws.String("arn:aws:iam::033940273928:instance-profile/gosdk"),
 			},
 			ImageId:      aws.String("ami-0cb72367e98845d43"),
 			InstanceType: aws.String("t2.micro"),
