@@ -20,6 +20,7 @@ func main() {
 			},
 			ImageId:      aws.String("ami-0cb72367e98845d43"),
 			InstanceType: aws.String("t2.micro"),
+			KeyName:      aws.String("abryant-us-west-2"),
 			SecurityGroupIds: []*string{
 				aws.String("sg-253f426d"),
 			},
